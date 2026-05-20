@@ -1,0 +1,211 @@
+<head>
+
+<title>About Us - Animal World</title>
+
+<style>
+
+body {
+
+margin: 0;
+
+font-family: Arial, sans-serif;
+
+background-color: #f4f4f4;
+
+}
+
+/* Navbar */
+
+nav {
+
+background-color: black;
+
+padding: 15px;
+
+text-align: center;
+
+}
+
+nav a {
+
+color: white;
+
+margin: 20px;
+
+text-decoration: none;
+
+font-weight: bold;
+
+}
+
+nav a:hover {
+
+color: yellow;
+
+}
+
+/* Hero Section */
+
+.hero {
+
+background: url('https://images.unsplash.com/photo-1501706362039-c6e13f1d1e8f');
+
+background-size: cover;
+
+background-position: center;
+
+color: white;
+
+padding: 100px 20px;
+
+text-align: center;
+
+}
+
+.hero h1 {
+
+font-size: 50px;
+
+}
+
+.hero p {
+
+font-size: 20px;
+
+}
+
+/* Section */
+
+.section {
+
+padding: 40px;
+
+text-align: center;
+
+}
+
+.card {
+
+background: white;
+
+width: 70%;
+
+margin: 20px auto;
+
+padding: 20px;
+
+border-radius: 10px;
+
+box-shadow: 0px 0px 10px gray;
+
+}
+
+/* Button */
+
+button {
+
+padding: 10px 20px;
+
+background: orange;
+
+border: none;
+
+color: white;
+
+font-size: 16px;
+
+border-radius: 5px;
+
+cursor: pointer;
+
+}
+
+button:hover {
+
+background: darkorange;
+
+}
+
+/* Hidden content */
+
+#more {
+
+display: none;
+
+}
+
+/* Footer */
+
+footer {
+
+background: black;
+
+color: white;
+
+text-align: center;
+
+padding: 15px;
+
+margin-top: 20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+    <!--Nav bar-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="info.html">info</a>
+        <a href="contact.html"></a>
+    </nav>
+
+    <!--Hero section-->
+    <div class="hero">
+        <div class="hero">
+            <h1>About the animal World</h1>
+            <p>Explore the wildlife and nature</p>
+        </div>
+    </div>
+
+    <!--<About us section-->
+    <div class="section">
+        <div class="card">
+            <h2>Who we are</h2>
+            <p>We are passionate about animals and nature. Our mission it to educate children in a fun way in which they dont feel bored</p>
+        </div>
+
+        <div class="card">
+            <h2>Our mission</h2>
+            <p>Our mission as well as to educate children, want to spread awareness about our nature and enviornment amongst everyone including young or old minds</p>
+        </div>
+
+        <div class="card">
+            <h2>More about us</h2>
+            <p id="text">We are a group of 5 people who are trying to spread awareness about our enviornment using various means. <span id="more">We aim to save and rescue animals to help them</span></p>
+
+            <button onclick="showMore()">Show more</button>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <p>@Copyright 2026 Animal World | All rights reserved</p>
+    </footer>
+
+    <!--Script-->
+    <script>
+        function showMore(){
+            var moreTxt = document.getElementById("more");
+
+            if(moreTxt.style.display === "none"){
+                moreTxt.style.display = "incline";
+            } else {
+                moreTxt.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
