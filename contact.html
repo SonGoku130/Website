@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact us</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            text-align: center;
+            background: aliceblue;
+        }
+
+        nav {
+            background: black;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: orange;
+            padding: 5px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        input
+        textarea {
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            padding: 10p;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="info.html">Information</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us</a>
+    </nav>
+        
+    <section>
+        <h1>Contact us</h1>
+
+        <input type="text" placeholder="Your Name"><br>
+        <input type="email" placeholder="Your email"><br>
+        <textarea placeholder="Your Message"></textarea><br>
+
+        <button onclick="send()">Sumbit</button>
+
+        <p id="msg"></p>
+    </section>
+
+    <script>
+        function send() {
+            document.getElementById("msg").innerHTML = 
+            "Your message has been sumbitted";
+        }
+    </script>
+</body>
+</html>
